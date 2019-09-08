@@ -5,7 +5,6 @@ package com.example.myproject.jooq;
 
 
 import com.example.myproject.jooq.tables.Employee;
-import com.example.myproject.jooq.tables.FlywaySchemaHistory;
 import com.example.myproject.jooq.tables.Person;
 
 import javax.annotation.Generated;
@@ -33,8 +32,6 @@ public class Indexes {
     // -------------------------------------------------------------------------
 
     public static final Index EMPLOYEE_PRIMARY = Indexes0.EMPLOYEE_PRIMARY;
-    public static final Index FLYWAY_SCHEMA_HISTORY_FLYWAY_SCHEMA_HISTORY_S_IDX = Indexes0.FLYWAY_SCHEMA_HISTORY_FLYWAY_SCHEMA_HISTORY_S_IDX;
-    public static final Index FLYWAY_SCHEMA_HISTORY_PRIMARY = Indexes0.FLYWAY_SCHEMA_HISTORY_PRIMARY;
     public static final Index PERSON_PRIMARY = Indexes0.PERSON_PRIMARY;
 
     // -------------------------------------------------------------------------
@@ -43,8 +40,6 @@ public class Indexes {
 
     private static class Indexes0 {
         public static Index EMPLOYEE_PRIMARY = Internal.createIndex("PRIMARY", Employee.EMPLOYEE, new OrderField[] { Employee.EMPLOYEE.ID }, true);
-        public static Index FLYWAY_SCHEMA_HISTORY_FLYWAY_SCHEMA_HISTORY_S_IDX = Internal.createIndex("flyway_schema_history_s_idx", FlywaySchemaHistory.FLYWAY_SCHEMA_HISTORY, new OrderField[] { FlywaySchemaHistory.FLYWAY_SCHEMA_HISTORY.SUCCESS }, false);
-        public static Index FLYWAY_SCHEMA_HISTORY_PRIMARY = Internal.createIndex("PRIMARY", FlywaySchemaHistory.FLYWAY_SCHEMA_HISTORY, new OrderField[] { FlywaySchemaHistory.FLYWAY_SCHEMA_HISTORY.INSTALLED_RANK }, true);
         public static Index PERSON_PRIMARY = Internal.createIndex("PRIMARY", Person.PERSON, new OrderField[] { Person.PERSON.ID }, true);
     }
 }

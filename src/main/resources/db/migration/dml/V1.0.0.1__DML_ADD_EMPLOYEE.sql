@@ -1,0 +1,9 @@
+INSERT INTO `employee` VALUES (1, 'A', 'AAA_1', 27, '1', NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `employee` VALUES (2, 'S', 'AAA_2', 27, '1', NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `employee` VALUES (3, 'D', 'AAA_3', 27, '1', NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `employee` VALUES (4, 'F', 'AAA_4', 27, '1', NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `employee` VALUES (5, 'G', 'AAA_5', 27, '1', NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `employee` VALUES (6, 'H', 'AAA_6', 27, '1', NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `employee` VALUES (7, 'J', 'bbb', 1, '1', NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `employee` VALUES (8, 'K', 'bbb', 1, '1', NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `employee` VALUES (9, 'L', 'bbb', 1, '1', NULL, NULL, NULL, NULL, NULL);

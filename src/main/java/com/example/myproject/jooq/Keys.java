@@ -5,10 +5,8 @@ package com.example.myproject.jooq;
 
 
 import com.example.myproject.jooq.tables.Employee;
-import com.example.myproject.jooq.tables.FlywaySchemaHistory;
 import com.example.myproject.jooq.tables.Person;
 import com.example.myproject.jooq.tables.records.EmployeeRecord;
-import com.example.myproject.jooq.tables.records.FlywaySchemaHistoryRecord;
 import com.example.myproject.jooq.tables.records.PersonRecord;
 
 import javax.annotation.Generated;
@@ -43,7 +41,6 @@ public class Keys {
     // -------------------------------------------------------------------------
 
     public static final UniqueKey<EmployeeRecord> KEY_EMPLOYEE_PRIMARY = UniqueKeys0.KEY_EMPLOYEE_PRIMARY;
-    public static final UniqueKey<FlywaySchemaHistoryRecord> KEY_FLYWAY_SCHEMA_HISTORY_PRIMARY = UniqueKeys0.KEY_FLYWAY_SCHEMA_HISTORY_PRIMARY;
     public static final UniqueKey<PersonRecord> KEY_PERSON_PRIMARY = UniqueKeys0.KEY_PERSON_PRIMARY;
 
     // -------------------------------------------------------------------------
@@ -61,7 +58,6 @@ public class Keys {
 
     private static class UniqueKeys0 {
         public static final UniqueKey<EmployeeRecord> KEY_EMPLOYEE_PRIMARY = Internal.createUniqueKey(Employee.EMPLOYEE, "KEY_employee_PRIMARY", Employee.EMPLOYEE.ID);
-        public static final UniqueKey<FlywaySchemaHistoryRecord> KEY_FLYWAY_SCHEMA_HISTORY_PRIMARY = Internal.createUniqueKey(FlywaySchemaHistory.FLYWAY_SCHEMA_HISTORY, "KEY_flyway_schema_history_PRIMARY", FlywaySchemaHistory.FLYWAY_SCHEMA_HISTORY.INSTALLED_RANK);
         public static final UniqueKey<PersonRecord> KEY_PERSON_PRIMARY = Internal.createUniqueKey(Person.PERSON, "KEY_person_PRIMARY", Person.PERSON.ID);
     }
 }

@@ -5,7 +5,6 @@ package com.example.myproject.jooq;
 
 
 import com.example.myproject.jooq.tables.Employee;
-import com.example.myproject.jooq.tables.FlywaySchemaHistory;
 import com.example.myproject.jooq.tables.Person;
 
 import javax.annotation.Generated;
@@ -28,11 +27,6 @@ public class Tables {
      * The table <code>jooq.employee</code>.
      */
     public static final Employee EMPLOYEE = com.example.myproject.jooq.tables.Employee.EMPLOYEE;
-
-    /**
-     * The table <code>jooq.flyway_schema_history</code>.
-     */
-    public static final FlywaySchemaHistory FLYWAY_SCHEMA_HISTORY = com.example.myproject.jooq.tables.FlywaySchemaHistory.FLYWAY_SCHEMA_HISTORY;
 
     /**
      * The table <code>jooq.person</code>.

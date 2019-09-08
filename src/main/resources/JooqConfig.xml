@@ -20,7 +20,8 @@
 
             <!--include和exclude用于控制为数据库中哪些表生成代码-->
             <includes>.*</includes>
-            <!--<excludes></excludes>-->
+            <!--flyway_schema_history是flyway自建表，非业务表不用生成代码-->
+            <excludes>flyway_schema_history</excludes>
 
             <!--数据库名称-->
             <inputSchema>jooq</inputSchema>
