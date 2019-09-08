@@ -5,6 +5,7 @@ package com.example.myproject.jooq;
 
 
 import com.example.myproject.jooq.tables.Employee;
+import com.example.myproject.jooq.tables.FlywaySchemaHistory;
 import com.example.myproject.jooq.tables.Person;
 
 import java.util.ArrayList;
@@ -31,7 +32,7 @@ import org.jooq.impl.SchemaImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Jooq extends SchemaImpl {
 
-    private static final long serialVersionUID = 1347415357;
+    private static final long serialVersionUID = 1455467037;
 
     /**
      * The reference instance of <code>jooq</code>
@@ -42,6 +43,11 @@ public class Jooq extends SchemaImpl {
      * The table <code>jooq.employee</code>.
      */
     public final Employee EMPLOYEE = com.example.myproject.jooq.tables.Employee.EMPLOYEE;
+
+    /**
+     * The table <code>jooq.flyway_schema_history</code>.
+     */
+    public final FlywaySchemaHistory FLYWAY_SCHEMA_HISTORY = com.example.myproject.jooq.tables.FlywaySchemaHistory.FLYWAY_SCHEMA_HISTORY;
 
     /**
      * The table <code>jooq.person</code>.
@@ -74,6 +80,7 @@ public class Jooq extends SchemaImpl {
     private final List<Table<?>> getTables0() {
         return Arrays.<Table<?>>asList(
             Employee.EMPLOYEE,
+            FlywaySchemaHistory.FLYWAY_SCHEMA_HISTORY,
             Person.PERSON);
     }
 }
